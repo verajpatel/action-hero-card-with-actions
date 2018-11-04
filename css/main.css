@@ -1,0 +1,36 @@
+html {
+  font-family: "Mukta Mahee", sans-serif;
+  color: #333;
+}
+
+.action-card {
+  border-radius: .3em;
+  overflow: hidden;
+  box-shadow: 0 .1em .4em rgba(0, 0, 0, .5);
+}
+
+.action-btn {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  padding: .3em;
+  color: #555;
+}
+
+.action-btn:hover {
+  background-color: #e2e2e2;
+  color: #555;
+}
+
+.action-tools-top .action-btn {
+  background-color: rgba(0, 0, 0, .2);
+  filter: drop-shadow(0 .1em .1em #000);
+  color: #fff;
+}
+
+.action-tools-top .action-btn:hover {
+  background-color: #fff;
+  filter: none;
+  box-shadow: 0 .1em .3em #000;
+  color: #555;
+}

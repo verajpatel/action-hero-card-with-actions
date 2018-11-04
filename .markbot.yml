@@ -1,0 +1,78 @@
+repo: 'action-hero-card-with-action'
+canvasCourse: 'web-dev-3'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - css-order-modules-grid-type-main
+  - google-fonts
+  - modulifier-buttons
+  - screenshots-all
+
+html:
+  - path: 'index.html'
+    outline: false
+    has:
+      - ['link[href*="Mukta+Mahee"]', 'The Google Font, `Mukta+Mahee` (regular, bold), is missing']
+      - 'article.action-card'
+      - 'article > header'
+      - 'article > footer > menu > li > button > i.icon.i-1 > svg > use'
+      - 'use[href*="#fullscreen"]'
+      - 'use[href*="#heart"]'
+      - 'use[href*="#comment"]'
+      - 'use[href*="#share"]'
+      - 'use[href*="#download"]'
+      - 'img.img-flex[srcset][sizes][src]'
+      - '.action-tools-top'
+      - '.action-tools-bottom'
+      - '.action-btn'
+    search:
+      - 'Blue Bolt, Series 6D,'
+      - 'Blue Bolt, the human lightning streak, in weird'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['html', 'font-family', '"Mukta Mahee", sans-serif']
+      - ['.action-card', 'box-shadow']
+      - ['.action-btn']
+      - ['.action-btn:hover']
+      - ['.action-tools-top .action-btn', 'filter']
+      - ['.action-tools-top .action-btn:hover']
+    search:
+      - '#fff'
+      - '#e2e2e2'
+      - '#555'
+      - '#333'
+      - '#000'
+      - 'rgba'
+  - path: 'css/modules.css'
+    locked: true
+  - path: 'css/grid.css'
+    locked: true
+  - path: 'css/type.css'
+    locked: true
+
+files:
+  - path: 'images/icons.svg'
+    smushed: true
+    search:
+      - 'id="fullscreen"'
+      - 'id="download"'
+      - 'id="share"'
+      - 'id="heart"'
+      - 'id="comment"'
+  - path: 'images/blue-bolt-480.jpg'
+    smushed: true
+    minWidth: 480
+    maxWidth: 480
+    minHeight: 650
+    maxHeight: 652
+  - path: 'images/blue-bolt-975.jpg'
+    smushed: true
+    minWidth: 975
+    maxWidth: 975
+    minHeight: 1320
+    maxHeight: 1324
