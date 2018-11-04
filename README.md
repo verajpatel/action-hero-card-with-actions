@@ -2,6 +2,7 @@
 summary: 'Create a card interface with a toolbar of actions using <img srcset> and SVG icons.'
 time: '1 hour'
 deliverables: '1 HTML file, 3 CSS files, images'
+download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/action-hero-card-with-actions-download.zip'
 ---
 
 # Action hero card with actions
